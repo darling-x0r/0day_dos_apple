@@ -1,8 +1,8 @@
-# PoC for iOS, macOS, iPadOS (DoS)
+# CVE-2021-30924. PoC for iOS, macOS, iPadOS (DoS)
 
 **Apple has quietly fixed this in iOS(and iPadOS) 15.1 and macOS 12.0 without any kind of public acknowledgement or reward.**
 
-**Updated: Apple only mentioned us for macOS. They don't give any more comments. ([About the security content of macOS Monterey 12.0.1](https://support.apple.com/en-us/HT212869)).**
+**Updated: Apple only mentioned us for macOS (CVE-2021-30924). They don't give any more comments. ([About the security content of macOS Monterey 12.0.1](https://support.apple.com/en-us/HT212869)).**
 ## Issue
 Kernel panic after send 2+ TCP/UDP packets by attacker device via apple device hotspot net to external network
 
@@ -45,3 +45,7 @@ We used raw sockets to form a custom package and send requests from port 0.
 ...
 ```
 After sending 2 packets(print "Packet Send..."), DoS is called and elf execution can be terminated.
+
+## Our links
+Elaman Iskakov - @darling_x0r
+Alexey Katkov - @watman27
