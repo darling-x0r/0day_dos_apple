@@ -46,6 +46,9 @@ We used raw sockets to form a custom package and send requests from port 0.
 ```
 After sending 2 packets(print "Packet Send..."), DoS is called and elf execution can be terminated.
 
+## Requirements
+Linux-based systems. (tested on Ubuntu 21.04)
+
 ## Our links
 Elaman Iskakov - @darling_x0r
 Alexey Katkov - @watman27
